@@ -6,9 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 def salary_prediction(years):    
-    path="C:\\Users\\ankit\\_Demo\\"
-    data=path+'Salary_Data.csv'
-    dataset=pd.read_csv(data)
+    dataset=pd.read_csv("Salary_Data.csv")
 
     x=dataset.iloc[:,:-1].values
     y=dataset.iloc[:,-1].values
